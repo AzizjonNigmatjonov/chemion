@@ -1,0 +1,39 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+    .heading-first {
+        @apply text-[30px] sm:text-[45px] 2xl:text-[60px]
+    }
+    .heading-first {
+        font-family: 'Gilroy'; font-weight: 600; color: #111;
+    }
+    .heading-second {
+        @apply text-[28px] sm:text-[36px] 2xl:text-[42px]
+    }
+    .heading-second {
+        font-family: 'Gilroy'; font-weight: 600;
+    }
+    .heading-third {
+        @apply text-[26px] 2xl:text-[32px]
+    }
+    .heading-third {
+        font-family: 'Gilroy'; font-weight: 600;
+    }
+    .hover-link-none {
+        @apply hover:no-underline;
+    }
+    .hover-link-none:hover {
+        color: inherit;
+    }
+    .font-400 {
+        font-weight: normal;
+    }
+    .font-500 {
+        font-weight: 500;
+    }
+    .font-600 {
+        font-weight: 600;
+    }
+}
