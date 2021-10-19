@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chemion</title>
+    
+    <link rel="stylesheet" href="../assets/css/uikit.min.css" />
+    <link rel="stylesheet" href="../assets/css/tailwind.css" />
+    
+    <link rel="stylesheet" href="../assets/sass/main.css">
+    
+</head>
+<body>
+    
+    <div id="overlay" class="uk-position-fixed uk-width-1-1 uk-height-1-1 uk-position-top-left uk-flex uk-flex-center uk-flex-middle" style="background: rgba(17, 17, 17, 0.42); backdrop-filter: blur(32px); z-index: 999;">
+        <div>
+            <img class="anim-circle w-[233px]" src="../assets/img/svg/logo.svg" alt="logo">
+        </div>
+    </div>
+    
+    <div uk-sticky="show-on-up: true; animation: uk-animation-slide-top; sel-target: .main-header; cls-active: uk-navbar-sticky bg-[#fff]; cls-inactive: uk-navbar-transparent z-[9]; top: 200;" class="navbar">
+        <header id="mainHeader" class="header main-header absolute top-0 left-0 w-full z-10 border-b border-[#fff] border-opacity-[0.06]">
+            
+            <div class="uk-container uk-container-large">
+                <nav class="uk-flex uk-flex-middle py-[30px] sm:py-[40px] 2xl:py-[60px]" uk-grid>
+                    
+                    <div class="uk-navbar-left">
+                        <div class="uk-flex-middle" uk-grid>
+                            <div>
+                                <a href="index.html">
+                                    <img class="uk-animation-fade w-[150px] sm:w-[175px]" src="../assets/img/svg/logo.svg" alt="Logo">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="uk-navbar-right">
+                        <div>  
+                            <div class="text-[#1d1d1b]">
+                                <a href="javascript:void(0);" uk-toggle="target: #offcanvas-flip" class="text-[#1d1d1b] hover-link">
+                                    <img class="w-[28px] h-[17px]" src="../assets/img/svg/menu.svg" alt="menu">                                          
+                                </a>
+                            </div>
+                            
+                            <div id="offcanvas-flip" uk-offcanvas="flip: true; overlay: true">
+                                <div class="uk-offcanvas-bar uk-padding-remove">
+                                    
+                                    <div class="uk-position-relative h-full w-full uk-padding-remove-bottom" uk-scrollspy="target: .animBottom; cls: uk-animation-slide-top-small; delay: 100;">
+                                        
+                                        <div class="sm:p-[30px] xl:p-[40px]">
+                                            <div class="uk-padding uk-position-relative">
+                                                <ul class="uk-grid-small uk-child-width-1-1 space-y-[25px]">
+                                                    <li class="flex justify-end">
+                                                        <button class="uk-offcanvas-close" type="button" uk-close>
+                                                            <div class="border border-[#CD1527] rounded-full">
+                                                                <img src="../assets/img/svg/add.svg" alt="close"> 
+                                                            </div>                                     
+                                                        </button>
+                                                    </li>
+                                                    <li>
+                                                        <a href="about.html" class="text-[#000] hover-link-none nav-item active animBottom">Bosh sahifa</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="about.html" class="text-[#000] hover-link-none nav-item animBottom">Biz haqimizda</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="office.html" class="text-[#000] hover-link-none nav-item animBottom">Xalqaro savdo va xizmatlar</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="services.html" class="text-[#000] hover-link-none nav-item animBottom">Xizmatlar</a>
+                                                    </li>
+                                                    <li>
+                                                        <div class="flex items-center space-x-[20px] text-[#000]">
+                                                            <a href="contact.html" class="nav-item-mini-link hover-link-none animBottom">Kontaktlar</a>
+                                                            <a href="news.html" class="nav-item-mini-link hover-link-none animBottom">Yangiliklar</a>
+                                                        </div>
+                                                    </li>
+                                                    <li>
+                                                        <ul class="flex items-center space-x-[20px] nav-lang-links-wrapper pt-[30px]">
+                                                            <li>
+                                                                <a href="#" class="active animBottom hover-link-none">UZ</a>
+                                                            </li>
+                                                            <li>
+                                                                <a href="#" class="animBottom hover-link-none">RU</a>
+                                                            </li>
+                                                            <li>
+                                                                <a href="#" class="animBottom hover-link-none">EN</a>
+                                                            </li>
+                                                        </ul>
+                                                    </li>
+                                                </ul>
+                                                <div class="uk-position-absolute right-[0px] bottom-[0px] nav-socials-wrapper">
+                                                    <ul class="flex items-center uk-flex-column space-y-[14px] uk-padding">
+                                                        <li class="animBottom">
+                                                            <a href="#" class="w-[48px] h-[48px] flex items-center justify-center border border-[#1A236E] rounded-full">
+                                                               <img src="../assets/img/svg/linkedin.svg" alt="linkin">                                                           
+                                                            </a>
+                                                        </li>
+                                                        <li class="animBottom">
+                                                            <a href="#" class="w-[48px] h-[48px] flex items-center justify-center border border-[#1A236E] rounded-full">
+                                                                <img src="../assets/img/svg/facebook.svg" alt="facebook"> 
+                                                            </a>
+                                                        </li>
+                                                        <li class="animBottom">
+                                                            <a href="#" class="w-[48px] h-[48px] flex items-center justify-center border border-[#1A236E] rounded-full">
+                                                                <img src="../assets/img/svg/telegram.svg" alt="telegram">                                                             
+                                                            </a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        
+                                        <div class="nav-content-bottom p-[20px] md:p-[40px] border-[15px] border-[#1D2F45] mt-[100px] w-full animBottom">
+                                            <div class="nav-content-bottom-wrapper uk-flex-middle justify-between" uk-grid>
+                                                <div class="nav-content-bottom-context">
+                                                    <h3 class="text-xl sm:text-[24px] 2xl:text-[28px] font-bold animBottom" style="color: #111; font-family: 'Gilroy';">
+                                                        Biz bilan ishlash istagida bo’lsangiz biz bilan aloqaga chiqing.
+                                                    </h3>
+                                                    <div class="mt-[10px] animBottom">
+                                                        <p class="text-opacity-[0.82]" style="color: #111;">
+                                                            Bizdan sotib olgan mijozlarimiz har doim shunga ohshaga ashulalar eshitib yurishadi 2% chegirma doimiy mijozlarga.
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                                <div class="w-[270px] flex uk-flex-right@m text-[#111] uk-animation-fade nav-content-contact-link">
+                                                    <a href="#" class="text-lg 2xl:text-xl text-[#111] flex items-center hover-link-none group sm:mt-[20px] md:mt-[0]">
+                                                        Aloqaga chiqish
+                                                        <div class="group-hover:w-[15px] duration-500 w-[28px] ml-[14px] h-[2px] bg-[#CD1527] bg-opacity-[0.42]"></div>
+                                                        <div class="absolute w-[52px] h-[52px] rounded-full border border-[#CD1527] flex items-center relative">
+                                                            <div class="absolute left-[-15px] w-[28px] h-[2px] bg-[#CD1527] bg-opacity-[0.42] ml-[14px]" style="z-index: -1;"></div>
+                                                            <div class="absolute left-[50%] translate-x-[-50%]">
+                                                                <svg width="9" height="14" viewBox="0 0 9 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                    <path d="M0.638733 0.930176L8.47915 7.00018L0.638733 13.0702" stroke="#CD1527" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                                                                </svg>                                                    
+                                                            </div>
+                                                        </div>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        
+                                    </div>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    
+                </nav>
+            </div>
+            
+        </header>
+    </div>
+    
+    <section class="uk-section uk-padding-remove-vertical mt-[110px] sm:mt-[140px] xl:mt-[180px] relative uk-overflow-hidden about-main-section" uk-scrollspy="target: .animateBottom; cls: uk-animation-slide-bottom-medium;delay: 100; repeat: true">
+        <div class="arrow-right rotate-[225deg] absolute left-[-20px] top-[-80px] uk-visible@l"></div>
+        
+        <div class="about-ractangle-img-wrapper absolute left-0 top-[-230px] lg:top-[-170px] uk-visible@m">
+            <svg width="433" height="763" viewBox="0 0 433 763" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect opacity="0.02" x="-95" y="21" width="507" height="721" stroke="white" stroke-width="42"/>
+            </svg>                
+        </div>
+        
+        <div class="uk-grid-collapse" uk-grid>
+            <div class="bg-[#0E1764] uk-padding uk-width-expand about-text-side-wrapper">
+                <div class="left-1/2 top-1/2 absolute w-full -translate-y-1/2
+                uk-container uk-container-large -translate-x-1/2">
+                <div class="uk-flex-middle uk-container uk-container-large"  uk-grid>
+                    
+                    <div class="absolute about-ractagnel-bottom-img-wrapper uk-visible@s">
+                        <svg width="649" height="" viewBox="0 0 549 312" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect opacity="0.03" x="21" y="21" width="507" height="270" stroke="white" stroke-width="42"/>
+                        </svg>                
+                    </div>
+                    
+                    <div class="md:w-[400px] lg:w-[500px] about-main-content-wrapper">
+                        <div class="uk-flex uk-flex-column">
+                            <p class="text-[#fff] text-opacity-[0.42] font-500 animateBottom">Ofislar</p>
+                            <h1 class="heading-four text-[#fff] mt-[40px] animateBottom">
+                                Ofislarimiz ikki davlatta mavjud
+                            </h1>
+                            <div class="mt-[12px]">
+                                <p class="text-[#fff] font-400 text-opacity-[0.72] animateBottom">
+                                    Ban elimi sana vadiim duramadim yine galdim bu da benim dardim san seeev diye yinemi sevayim Biznesini endigina boshlagan, boshqaruv va sotuv bilan muammo larga duch kelayotgan barcha yosh 
+                                </p>
+                            </div>
+                            <div>
+                                <div class="mt-[40px] text-[#fff] uk-display-inline-block">
+                                    <div class="w-[230px] 2xl:w-[245px] flex uk-flex-right text-[#fff] uk-animation-fade">
+                                        <a href="#" class="text-lg 2xl:text-xl text-[#fff] flex items-center hover-link-none group font-500">
+                                            Aloqaga chiqish
+                                            <div class="group-hover:w-[15px] duration-500 w-[28px] ml-[14px] h-[2px] bg-[#fff] bg-opacity-[0.42]"></div>
+                                            <div class="absolute w-[52px] h-[52px] rounded-full border border-[#fff] flex items-center relative">
+                                                <div class="absolute left-[-15px] w-[28px] h-[2px] bg-[#fff] bg-opacity-[0.42] ml-[14px]" style="z-index: -1;"></div>
+                                                <div class="absolute left-[50%] translate-x-[-50%]">
+                                                    <svg width="9" height="14" viewBox="0 0 9 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <path d="M0.638733 0.930176L8.47915 7.00018L0.638733 13.0702" stroke="#fff" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                                                    </svg>                                                    
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="pt-[70px] pb-[25px] w-[30%] xl:w-[37%] uk-visible@m">
+            <div class="uk-container uk-container-large uk-position-relative ml-[-220px] about-main-img-wrapper">                        
+                <div>
+                    <img class="w-[627px] h-[608px] object-center" src="../assets/img/office/main-img.png" alt="main img">
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="uk-section uk-position-relative uk-overflow-hidden uk-overflow-hidden" uk-scrollspy="target: .animateBottom; cls: uk-animation-slide-bottom-medium;delay: 100; repeat: true">     
+    <div class="uk-container uk-container-large uk-margin-large-bottom uk-margin-large-top">
+        <div class="uk-flex-middle" uk-grid>
+            <div class="uk-width-1-2@l uk-width-3-4@m">
+                <div class="uk-flex uk-flex-column">
+                    <h2 class="heading-second text-[#111] animateBottom">
+                        Bizning manashu davlatlarda ofislarimiz mavjud.
+                    </h2>
+                    <p class="mt-[12px] text-[#111] animateBottom">
+                        Xalqaro miqiyosda kimyoviy xom-ashyolarni yetkazib berish bilan shug‘ullanuvchi rivojlanayotgan, o‘zgaruvchan bozorlarga moslashuvchan va doimiy o‘sishni o‘z oldiga maqsad qilib olgan jamoa ega kompaniya.
+                    </p>
+                </div>
+            </div>
+            
+            <div class="w-full lg:h-[100vh]" uk-scrollspy="cls: uk-animation-fade;delay: 100; repeat: true">
+                <img class="w-full h-full object-cover object-right xl:object-center" src="../assets/img/office/map.png" alt="map" loading="lazy">
+            </div>
+        </div>
+    </div>
+    
+</section>
+
+
+<section class="uk-section uk-position-relative uk-overflow-hidden uk-position-relative digitals-section-wrapper uk-padding-remove-vertical" uk-scrollspy="target: .animateBottom; cls: uk-animation-slide-bottom-medium;delay: 100">
+    <div class="uk-container uk-container-large py-[30px] 2xl:py-[70px]">
+        <div class="uk-flex-middle uk-flex-between uk-padding-large uk-padding-remove-horizontal" uk-grid>
+            <div class="uk-width-expand@l uk-width-1-1@m">
+                <form action="#" class="uk-child-width-1-1 uk-grid-medium" uk-grid>
+                    <div class="uk-width-3-4@m uk-width-1-1@l">
+                        <h2 class="heading-second text-[#fff] animateBottom">Biznesingizda xomashyo boyicha muammoingiz bo’lsa bizga murojat qilishingiz mumkin.</h2>
+                        <p class="lg:w-[74%] text-[#fff] text-opacity-[0.72] mt-[12px] animateBottom">
+                            Xalqaro miqiyosda kimyoviy xom-ashyolarni yetkazib berish bilan shug‘ullanuvchi rivojlanayotgan, o‘zgaruvchan bozorlarga moslashuvchan va doimiy 
+                        </p>
+                    </div>
+                    <div class="uk-width-3-4@s uk-width-auto@m">
+                        <div class="flex justify-space-between uk-grid-small mt-[6px]" uk-grid>
+                            <div class="uk-width-expand@m animateBottom">
+                                <div>
+                                    <input class="form-input border focus:outline-none w-full rounded-[4px] h-[52px] px-[24px] bg-transparent text-[#fff]" type="text" placeholder="Muhammad Aziz">
+                                </div>
+                            </div>
+                            <div class="uk-width-expand@m animateBottom">
+                                <div class="lg:ml-[7px] mt-[6px] md:mt-[0]">
+                                    <input class="form-input border focus:outline-none w-full rounded-[4px] h-[52px] px-[24px] bg-transparent text-[#fff]" type="text" placeholder="+9989X XXX XX XX"></input>
+                                </div>
+                            </div>
+                            <div class="form-send-link w-[160px] 2xl:w-[200px] ml-[20px] 2xl:ml-0 flex uk-flex-right text-[#fff] uk-animation-fade">
+                                <a href="#" class="text-lg 2xl:text-xl text-[#fff] flex items-center hover-link-none group">
+                                    Yuborish
+                                    <div class="group-hover:w-[15px] duration-500 w-[28px] ml-[14px] h-[2px] bg-[#fff] bg-opacity-[0.42]"></div>
+                                    <div class="absolute w-[52px] h-[52px] rounded-full border border-[#fff] flex items-center relative">
+                                        <div class="absolute left-[-15px] w-[28px] h-[2px] bg-[#fff] bg-opacity-[0.42] ml-[14px]" style="z-index: -1;"></div>
+                                        <div class="absolute left-[50%] translate-x-[-50%]">
+                                            <svg width="9" height="14" viewBox="0 0 9 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M0.638733 0.930176L8.47915 7.00018L0.638733 13.0702" stroke="white" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                                            </svg>                                                    
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="flex md:items-end flex-col md:flex-row mt-[30px]">
+                            <div class="text-[#fff] animateBottom">
+                                <a href="#" class="heading-second text-[#fff] border-b border-[#fff] border-opacity-[0.42] py-[7px] hover-link-none hover:text-[#ffffffbb] duration-300">+998 97 404 40 04</a>
+                            </div>
+                            <div class="text-[#fff] animateBottom">
+                                <div class="md:ml-[70px] md:mb-[5px] mt-[25px]">
+                                    <a href="#" class="border-b border-[#fff] border-opacity-[0.42] py-[7px] text-[#fff] hover-link-none text-xl hover:text-[#ffffffbb] duration-300">
+                                        chemion@gmail.com
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            
+            <div class="xl:w-[44%] flex justify-end form-img-wrapper mt-[70px]">
+                <div class="uk-grid-small uk-position-relative" uk-grid>
+                    <div>
+                        <img class="w-[233px] h-[421px] object-cover rotate-[8deg] form-img-1" src="../assets/img/main/matterial-img-2.png" alt="matterial">
+                    </div>
+                    <div>
+                        <img class="w-[233px] h-[421px] object-cover rotate-[8deg] form-img-2" src="../assets/img/main/matterial-img-3.png" alt="matterial">
+                    </div>
+                    <div class="absolute top-[-87px] left-[50%] translate-x-[-50%]">
+                        <img class="w-[233px] h-[421px] object-cover rotate-[8deg] form-img-3" src="../assets/img/main/matterial-img-1.png" alt="matterial">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="arrow-right rotate-[225deg] absolute left-[-20px] top-[-80px] uk-visible@l"></div>
+</section>
+
+<footer class="uk-section sm:mt-[100px] uk-position-relative uk-overflow-hidden uk-position-relative bg-[#f4f4f4] uk-padding-remove-vertical" uk-scrollspy="target: .animateBottom; cls: uk-animation-slide-bottom-small;delay: 100">
+    
+    <div class="absolute footer-ractangle-img-wrapper uk-visible@l animateBottom">
+        <svg width="479" height="296" viewBox="0 0 479 296" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect opacity="0.04" x="21" y="21" width="479" height="254" stroke="#111111" stroke-width="42"/>
+        </svg>                
+    </div>
+    
+    <div class="uk-container uk-container-large uk-padding-large sm:pt-[100px]">
+        <ul class="uk-flex-between uk-text-center uk-text-left@s pt-[30px] sm:pt-[0]" uk-grid>
+            <li class="uk-width-1-3@l uk-width-1-2@s">
+                <div>
+                    <div class="uk-display-inline-block animateBottom">
+                        <a href="index.html">
+                            <img class="w-[179px]" src="../assets/img/svg/logo.svg" alt="logo">
+                        </a>
+                    </div>
+                    <div class="mt-[45px]">
+                        <div>
+                            <h6 class="text-[#8796E9] text-base 2xl:text-lg font-600 animateBottom" style="font-family: 'Gilroy';">Biz qanday muammolarni yechamiz</h6>
+                        </div>
+                        <p class="2xl:text-lg text-opacity-[0.82] mt-[6px] animateBottom">
+                            Ishlab chiqaruvchiga kerak bo’ladiga plomer homashiyolarni kerakli joyga o’z vaqtida sifati buzilamagan holda yetqazib berish bizning eng asosiy yechadigan.
+                        </p>
+                    </div>
+                </div>
+            </li>
+            <li class="uk-width-1-6@l uk-width-1-5@m uk-width-1-3@s">
+                <ul class="flex flex-col space-y-[12px]">
+                    <li>
+                        <h5 class="2xl:text-lg font-500 text-[#111] text-opacity-[0.42] animateBottom" style="font-family: 'Gilroy';">Web sayt</h5>
+                    </li>
+                    <li class="text-[#111] animateBottom">
+                        <a class="text-[#111] font-500 hover-link-none sm:text-lg md:text-xl 2xl:text-[22px] line-animation" href="index.html">Bosh sahifa</a>
+                    </li>
+                    <li class="text-[#111] animateBottom">
+                        <a class="text-[#111] font-500 hover-link-none sm:text-lg md:text-xl 2xl:text-[22px] line-animation" href="about.html">Biz haqimizda</a>
+                    </li>
+                    <li class="text-[#111] animateBottom">
+                        <a class="text-[#111] font-500 hover-link-none sm:text-lg md:text-xl 2xl:text-[22px] line-animation" href="services.html">Xizmatlar</a>
+                    </li>
+                    <li class="text-[#111] animateBottom">
+                        <a class="text-[#111] font-500 hover-link-none sm:text-lg md:text-xl 2xl:text-[22px] line-animation" href="office.html">Xalqaro savdo</a>
+                    </li>
+                    <li class="text-[#111] animateBottom">
+                        <a class="text-[#111] font-500 hover-link-none sm:text-lg md:text-xl 2xl:text-[22px] line-animation" href="news.html">Yangiliklar</a>
+                    </li>
+                    <li class="text-[#111] animateBottom">
+                        <a class="text-[#111] font-500 hover-link-none sm:text-lg md:text-xl 2xl:text-[22px] line-animation" href="contact.html">Kontaktlar</a>
+                    </li>
+                </ul>
+            </li>
+            <li class="uk-width-1-6@m uk-width-1-4@s">
+                <ul class="flex flex-col space-y-[12px]">
+                    <li>
+                        <h5 class="2xl:text-lg font-500 text-[#111] text-opacity-[0.42] animateBottom" style="font-family: 'Gilroy';">Social media</h5>
+                    </li>
+                    <li class="text-[#111] animateBottom">
+                        <a class="text-[#111] font-500 hover-link-none sm:text-lg md:text-xl 2xl:text-[22px] line-animation" href="#">Telegram</a>
+                    </li>
+                    <li class="text-[#111] animateBottom">
+                        <a class="text-[#111] font-500 hover-link-none sm:text-lg md:text-xl 2xl:text-[22px] line-animation" href="#">Facebook</a>
+                    </li>
+                    <li class="text-[#111] animateBottom">
+                        <a class="text-[#111] font-500 hover-link-none sm:text-lg md:text-xl 2xl:text-[22px] line-animation" href="#">LinkedIn</a>
+                    </li>
+                </ul>
+            </li>
+            <li class="uk-width-1-4@l uk-width-1-2@s">
+                <ul class="flex flex-col space-y-[20px]">
+                    <li>
+                        <h5 class="2xl:text-lg font-500 text-[#111] text-opacity-[0.42] animateBottom" style="font-family: 'Gilroy';">Kontaktlar</h5>
+                    </li>
+                    <li class="text-[#111111bb] animateBottom">
+                        <a class="text-[#111] font-500 duration-200 hover-link-none sm:text-lg md:text-xl 2xl:text-[22px]" href="#">Bu erga kompaniyaning manzili
+                            yoziladi</a>
+                        </li>
+                        <li class="text-[#111111bb] animateBottom">
+                            <a class="text-[#111] font-500 duration-200 hover-link-none sm:text-lg md:text-xl 2xl:text-[22px]" href="tel:+998974044004">+998 97 404 40 04</a>
+                        </li>
+                        <li class="text-[#111111bb] animateBottom">
+                            <a class="text-[#111] font-500 duration-200 hover-link-none sm:text-lg md:text-xl 2xl:text-[22px]" href="mailto:chemion@gmail.com">chemion@gmail.com</a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        <div class="border-t-2 border-[#111] border-opacity-[0.12]" uk-scrollspy="cls: uk-animation-fade; target: .animFade; delay: 100;">
+            <div class="uk-container uk-container-large">
+                <ul class="uk-flex-middle uk-flex-between@s uk-text-center uk-text-left@s uk-padding uk-padding-remove-horizontal uk-child-width-1-1 uk-child-width-auto@s" uk-grid>
+                    <li>
+                        <p class="text-sm sm:text-base 2xl:text-lg text-[#111] text-opacity-[0.72] animFade">
+                            © Chemion Barcha huqular himoyalangan
+                        </p>
+                    </li>
+                    <li>
+                        <div class="uk-display-inline-block animFade">
+                            <a href="https://mount.uz">
+                                <img class="w-[100px] object-cover" src="../assets/img/svg/mount-logo.svg" alt="Mountain">
+                            </a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="arrow-right rotate-[225deg] absolute left-[-20px] top-[-80px] uk-visible@l"></div>
+    </footer>
+    
+    <script src="../assets/js/uikit.min.js"></script>
+    
+    <script src="../assets/js/main.js"></script>
+    
+</body>
+</html>

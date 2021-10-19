@@ -6,7 +6,7 @@ if (window.innerWidth < large) {
     });
 }
 
-// window.onload = function() {
-//     const el = document.getElementById('overlay');
-//     el.style.display = 'none';
-// };
+window.onload = function() {
+    const el = document.getElementById('overlay');
+    el.style.display = 'none';
+};

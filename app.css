@@ -21,6 +21,12 @@
     .heading-third {
         font-family: 'Gilroy'; font-weight: 600;
     }
+    .heading-four {
+        @apply text-[30px] 2xl:text-[36px]
+    }
+    .heading-four {
+        font-family: 'Gilroy'; font-weight: 600;
+    }
     .hover-link-none {
         @apply hover:no-underline;
     }
