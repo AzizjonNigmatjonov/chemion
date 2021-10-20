@@ -14,7 +14,7 @@
 </head>
 <body>
     
-    <div id="overlay" class="uk-position-fixed uk-width-1-1 uk-height-1-1 uk-position-top-left uk-flex uk-flex-center uk-flex-middle" style="background: rgba(17, 17, 17, 0.42); backdrop-filter: blur(32px); z-index: 999;">
+    <div id="overlay" class="uk-position-fixed uk-width-1-1 uk-height-1-1 uk-position-top-left uk-flex uk-flex-center uk-flex-middle" style="background: rgba(255, 255, 255, 0.62); backdrop-filter: blur(24px); z-index: 999;">
         <div>
             <img class="anim-circle w-[233px]" src="../assets/img/svg/logo.svg" alt="logo">
         </div>
@@ -54,8 +54,8 @@
                                                 <ul class="uk-grid-small uk-child-width-1-1 space-y-[25px]">
                                                     <li class="flex justify-end">
                                                         <button class="uk-offcanvas-close" type="button" uk-close>
-                                                            <div class="border border-[#CD1527] rounded-full">
-                                                                <img src="../assets/img/svg/add.svg" alt="close"> 
+                                                            <div class="border border-[#CD1527] rounded-full group">
+                                                                <img class="group-hover:rotate-[90deg] lg:rotate-[45deg] duration-200" src="../assets/img/svg/add.svg" alt="close">                                                                  
                                                             </div>                                     
                                                         </button>
                                                     </li>
@@ -94,18 +94,18 @@
                                                 <div class="uk-position-absolute right-[0px] bottom-[0px] nav-socials-wrapper">
                                                     <ul class="flex items-center uk-flex-column space-y-[14px] uk-padding">
                                                         <li class="animBottom">
-                                                            <a href="#" class="w-[48px] h-[48px] flex items-center justify-center border border-[#1A236E] rounded-full">
-                                                               <img src="../assets/img/svg/linkedin.svg" alt="linkin">                                                           
+                                                            <a href="#" class="w-[48px] h-[48px] flex items-center justify-center border border-[#1A236E] rounded-full group">
+                                                                <img class="group-hover:scale-125 duration-200" src="../assets/img/svg/linkedin.svg" alt="linkin">                                                           
                                                             </a>
                                                         </li>
                                                         <li class="animBottom">
-                                                            <a href="#" class="w-[48px] h-[48px] flex items-center justify-center border border-[#1A236E] rounded-full">
-                                                                <img src="../assets/img/svg/facebook.svg" alt="facebook"> 
+                                                            <a href="#" class="w-[48px] h-[48px] flex items-center justify-center border border-[#1A236E] rounded-full group">
+                                                                <img class="group-hover:scale-125 duration-200" src="../assets/img/svg/facebook.svg" alt="facebook"> 
                                                             </a>
                                                         </li>
                                                         <li class="animBottom">
-                                                            <a href="#" class="w-[48px] h-[48px] flex items-center justify-center border border-[#1A236E] rounded-full">
-                                                                <img src="../assets/img/svg/telegram.svg" alt="telegram">                                                             
+                                                            <a href="#" class="w-[48px] h-[48px] flex items-center justify-center border border-[#1A236E] rounded-full group">
+                                                                <img class="group-hover:scale-125 duration-200" src="../assets/img/svg/telegram.svg" alt="telegram">                                                             
                                                             </a>
                                                         </li>
                                                     </ul>
@@ -120,7 +120,7 @@
                                                         Biz bilan ishlash istagida bo’lsangiz biz bilan aloqaga chiqing.
                                                     </h3>
                                                     <div class="mt-[10px] animBottom">
-                                                        <p class="text-opacity-[0.82]" style="color: #111;">
+                                                        <p class="text-opacity-[0.82] text-lg" style="color: #111;">
                                                             Bizdan sotib olgan mijozlarimiz har doim shunga ohshaga ashulalar eshitib yurishadi 2% chegirma doimiy mijozlarga.
                                                         </p>
                                                     </div>
@@ -254,21 +254,34 @@
                             </div>
                         </div>
                         
-                        <div class="uk-width-1-2@l uk-width-3-4@m">
+                        <div class="uk-width-1-2@l">
                             <div class="uk-flex uk-flex-column">
                                 <h2 class="heading-four text-[#111] animBottom">
                                     Qog’oz ishlab chiqarish sohasi
                                 </h2>
                                 <div class="mt-[22px]">
-                                    <p class="sm:text-xl 2xl:text-[20px] text-[#222] text-opacity-[0.72] font-500 animBottom">
+                                    <p class="text-lg 2xl:text-[20px] text-[#222] text-opacity-[0.72] font-500 animBottom">
                                         Ban elimi sana vadiim duramadim yine galdim bu da benim dardim san seeev diye yinemi sevayim Biznesini endigina boshlagan, boshqaruv va sotuv bilan muammo larga duch kelayotgan barcha yosh 
                                     </p>
                                 </div>
                                 <div class="mt-[12px]">
-                                    <p class="sm:text-xl 2xl:text-[20px] text-[#222] text-opacity-[0.72] font-500 animBottom">
+                                    <p class="text-lg 2xl:text-[20px] text-[#222] text-opacity-[0.72] font-500 animBottom">
                                         Ban elimi sana vadiim duramadim yine galdim bu da benim dardim san seeev diye yinemi sevayim
                                         Biznesini endigina boshlagan, boshqaruv va sotuv bilan muammo
                                     </p>
+                                </div>
+                                <div class="mt-[40px] uk-hidden@l">
+                                    <div class="uk-grid-small uk-child-width-1-3@s uk-child-width-1-1 uk-grid-match" uk-grid>
+                                        <div class="uk-visible@s">
+                                            <img class="w-full h-full object-cover object-center" src="../assets/img/service/service-product-img-1.png" alt="paper">
+                                        </div>
+                                        <div class="uk-visible@s">
+                                            <img class="w-full h-full object-cover object-center" src="../assets/img/service/service-product-img-2.png" alt="paper">
+                                        </div>
+                                        <div>
+                                            <img class="w-full h-full object-cover object-center" src="../assets/img/service/service-product-img-3.png" alt="paper">
+                                        </div>
+                                    </div>
                                 </div>
                                 <div>
                                     <div class="mt-[40px] text-[#111] uk-display-inline-block">
@@ -295,21 +308,34 @@
                 
                 <div class="mt-[70px] lg:mt-[170px]">
                     <div class="uk-flex-middle uk-flex-between" uk-grid>
-                        <div class="uk-width-1-2@l uk-width-3-4@m">
+                        <div class="uk-width-1-2@l">
                             <div class="uk-flex uk-flex-column">
                                 <h2 class="heading-four text-[#111] animBottom">
                                     Textil mahsulotlari
                                 </h2>
                                 <div class="mt-[22px]">
-                                    <p class="sm:text-xl 2xl:text-[20px] text-[#222] text-opacity-[0.72] font-500 animBottom">
+                                    <p class="text-lg 2xl:text-[20px] text-[#222] text-opacity-[0.72] font-500 animBottom">
                                         Ban elimi sana vadiim duramadim yine galdim bu da benim dardim san seeev diye yinemi sevayim Biznesini endigina boshlagan, boshqaruv va sotuv bilan muammo larga duch kelayotgan barcha yosh 
                                     </p>
                                 </div>
                                 <div class="mt-[12px]">
-                                    <p class="sm:text-xl 2xl:text-[20px] text-[#222] text-opacity-[0.72] font-500 animBottom">
+                                    <p class="text-lg 2xl:text-[20px] text-[#222] text-opacity-[0.72] font-500 animBottom">
                                         Ban elimi sana vadiim duramadim yine galdim bu da benim dardim san seeev diye yinemi sevayim
                                         Biznesini endigina boshlagan, boshqaruv va sotuv bilan muammo
                                     </p>
+                                </div>
+                                <div class="mt-[40px] uk-hidden@l">
+                                    <div class="uk-grid-small uk-child-width-1-3@s uk-child-width-1-1 uk-grid-match" uk-grid>
+                                        <div>
+                                            <img class="w-full h-full object-cover object-center" src="../assets/img/service/textil-img-1.png" alt="textil">
+                                        </div>
+                                        <div class="uk-visible@s">
+                                            <img class="w-full h-full object-cover object-center" src="../assets/img/service/textil-img-2.png" alt="textil">
+                                        </div>
+                                        <div class="uk-visible@s">
+                                            <img class="w-full h-full object-cover object-center" src="../assets/img/service/textil-img-3.png" alt="textil">
+                                        </div>
+                                    </div>
                                 </div>
                                 <div>
                                     <div class="mt-[40px] text-[#111] uk-display-inline-block">
@@ -364,21 +390,34 @@
                             </div>
                         </div>
                         
-                        <div class="uk-width-1-2@l uk-width-3-4@m">
+                        <div class="uk-width-1-2@l">
                             <div class="uk-flex uk-flex-column">
                                 <h2 class="heading-four text-[#111] animBottom">
                                     Polimer
                                 </h2>
                                 <div class="mt-[22px]">
-                                    <p class="sm:text-xl 2xl:text-[20px] text-[#222] text-opacity-[0.72] font-500 animBottom">
+                                    <p class="text-lg 2xl:text-[20px] text-[#222] text-opacity-[0.72] font-500 animBottom">
                                         Ban elimi sana vadiim duramadim yine galdim bu da benim dardim san seeev diye yinemi sevayim Biznesini endigina boshlagan, boshqaruv va sotuv bilan muammo larga duch kelayotgan barcha yosh 
                                     </p>
                                 </div>
                                 <div class="mt-[12px]">
-                                    <p class="sm:text-xl 2xl:text-[20px] text-[#222] text-opacity-[0.72] font-500 animBottom">
+                                    <p class="text-lg 2xl:text-[20px] text-[#222] text-opacity-[0.72] font-500 animBottom">
                                         Ban elimi sana vadiim duramadim yine galdim bu da benim dardim san seeev diye yinemi sevayim
                                         Biznesini endigina boshlagan, boshqaruv va sotuv bilan muammo
                                     </p>
+                                </div>
+                                <div class="mt-[40px] uk-hidden@l">
+                                    <div class="uk-grid-small uk-child-width-1-3@s uk-child-width-1-1 uk-grid-match" uk-grid>
+                                        <div>
+                                            <img class="w-full h-full object-cover object-center" src="../assets/img/service/polimer-img-1.png" alt="polimer">
+                                        </div>
+                                        <div class="uk-visible@s">
+                                            <img class="w-full h-full object-cover object-center" src="../assets/img/service/polimer-img-2.png" alt="polimer">
+                                        </div>
+                                        <div class="uk-visible@s">
+                                            <img class="w-full h-full object-cover object-center" src="../assets/img/service/polimer-img-3.png" alt="polimer">
+                                        </div>
+                                    </div>
                                 </div>
                                 <div>
                                     <div class="mt-[40px] text-[#111] uk-display-inline-block">
@@ -405,21 +444,34 @@
                 
                 <div class="mt-[70px] lg:mt-[170px]">
                     <div class="uk-flex-middle uk-flex-between" uk-grid>
-                        <div class="uk-width-1-2@l uk-width-3-4@m">
+                        <div class="uk-width-1-2@l">
                             <div class="uk-flex uk-flex-column">
                                 <h2 class="heading-four text-[#111] animBottom">
                                     Yuvish vositalari
                                 </h2>
                                 <div class="mt-[22px]">
-                                    <p class="sm:text-xl 2xl:text-[20px] text-[#222] text-opacity-[0.72] font-500 animBottom">
+                                    <p class="text-lg 2xl:text-[20px] text-[#222] text-opacity-[0.72] font-500 animBottom">
                                         Ban elimi sana vadiim duramadim yine galdim bu da benim dardim san seeev diye yinemi sevayim Biznesini endigina boshlagan, boshqaruv va sotuv bilan muammo larga duch kelayotgan barcha yosh 
                                     </p>
                                 </div>
                                 <div class="mt-[12px]">
-                                    <p class="sm:text-xl 2xl:text-[20px] text-[#222] text-opacity-[0.72] font-500 animBottom">
+                                    <p class="text-lg 2xl:text-[20px] text-[#222] text-opacity-[0.72] font-500 animBottom">
                                         Ban elimi sana vadiim duramadim yine galdim bu da benim dardim san seeev diye yinemi sevayim
                                         Biznesini endigina boshlagan, boshqaruv va sotuv bilan muammo
                                     </p>
+                                </div>
+                                <div class="mt-[40px] uk-hidden@l">
+                                    <div class="uk-grid-small uk-child-width-1-3@s uk-child-width-1-1 uk-grid-match" uk-grid>
+                                        <div class="uk-visible@s">
+                                            <img class="w-full h-full object-cover object-center" src="../assets/img/service/wash-img-1.png" alt="wash">
+                                        </div>
+                                        <div>
+                                            <img class="w-full h-full object-cover object-center" src="../assets/img/service/wash-img-2.png" alt="wash">
+                                        </div>
+                                        <div class="uk-visible@s">
+                                            <img class="w-full h-full object-cover object-center" src="../assets/img/service/wash-img-3.png" alt="wash">
+                                        </div>
+                                    </div>
                                 </div>
                                 <div>
                                     <div class="mt-[40px] text-[#111] uk-display-inline-block">
@@ -474,21 +526,34 @@
                             </div>
                         </div>
                         
-                        <div class="uk-width-1-2@l uk-width-3-4@m">
+                        <div class="uk-width-1-2@l">
                             <div class="uk-flex uk-flex-column">
                                 <h2 class="heading-four text-[#111] animBottom">
                                     O’g’itlar
                                 </h2>
                                 <div class="mt-[22px]">
-                                    <p class="sm:text-xl 2xl:text-[20px] text-[#222] text-opacity-[0.72] font-500 animBottom">
+                                    <p class="text-lg 2xl:text-[20px] text-[#222] text-opacity-[0.72] font-500 animBottom">
                                         Ban elimi sana vadiim duramadim yine galdim bu da benim dardim san seeev diye yinemi sevayim Biznesini endigina boshlagan, boshqaruv va sotuv bilan muammo larga duch kelayotgan barcha yosh 
                                     </p>
                                 </div>
                                 <div class="mt-[12px]">
-                                    <p class="sm:text-xl 2xl:text-[20px] text-[#222] text-opacity-[0.72] font-500 animBottom">
+                                    <p class="text-lg 2xl:text-[20px] text-[#222] text-opacity-[0.72] font-500 animBottom">
                                         Ban elimi sana vadiim duramadim yine galdim bu da benim dardim san seeev diye yinemi sevayim
                                         Biznesini endigina boshlagan, boshqaruv va sotuv bilan muammo
                                     </p>
+                                </div>
+                                <div class="mt-[40px] uk-hidden@l">
+                                    <div class="uk-grid-small uk-child-width-1-3@s uk-child-width-1-1 uk-grid-match" uk-grid>
+                                        <div class="uk-visible@s">
+                                            <img class="w-full h-full object-cover object-center" src="../assets/img/service/ogit-img-1.png" alt="ogit">
+                                        </div>
+                                        <div class="uk-visible@s">
+                                            <img class="w-full h-full object-cover object-center" src="../assets/img/service/ogit-img-2.png" alt="ogit">
+                                        </div>
+                                        <div>
+                                            <img class="w-full h-full object-cover object-center" src="../assets/img/service/ogit-img-3.png" alt="ogit">
+                                        </div>
+                                    </div>
                                 </div>
                                 <div>
                                     <div class="mt-[40px] text-[#111] uk-display-inline-block">
@@ -521,15 +586,28 @@
                                     Qurilish sohasi
                                 </h2>
                                 <div class="mt-[22px]">
-                                    <p class="sm:text-xl 2xl:text-[20px] text-[#222] text-opacity-[0.72] font-500 animBottom">
+                                    <p class="text-lg 2xl:text-[20px] text-[#222] text-opacity-[0.72] font-500 animBottom">
                                         Ban elimi sana vadiim duramadim yine galdim bu da benim dardim san seeev diye yinemi sevayim Biznesini endigina boshlagan, boshqaruv va sotuv bilan muammo larga duch kelayotgan barcha yosh 
                                     </p>
                                 </div>
                                 <div class="mt-[12px]">
-                                    <p class="sm:text-xl 2xl:text-[20px] text-[#222] text-opacity-[0.72] font-500 animBottom">
+                                    <p class="text-lg 2xl:text-[20px] text-[#222] text-opacity-[0.72] font-500 animBottom">
                                         Ban elimi sana vadiim duramadim yine galdim bu da benim dardim san seeev diye yinemi sevayim
                                         Biznesini endigina boshlagan, boshqaruv va sotuv bilan muammo
                                     </p>
+                                </div>
+                                <div class="mt-[40px] uk-hidden@l">
+                                    <div class="uk-grid-small uk-child-width-1-3@s uk-child-width-1-1 uk-grid-match" uk-grid>
+                                        <div class="uk-visible@s">
+                                            <img class="w-full h-full object-cover object-center" src="../assets/img/service/build-img-1.png" alt="building">
+                                        </div>
+                                        <div class="uk-visible@s">
+                                            <img class="w-full h-full object-cover object-center" src="../assets/img/service/build-img-2.png" alt="building">
+                                        </div>
+                                        <div>
+                                            <img class="w-full h-full object-cover object-center" src="../assets/img/service/build-img-3.png" alt="building">
+                                        </div>
+                                    </div>
                                 </div>
                                 <div>
                                     <div class="mt-[40px] text-[#111] uk-display-inline-block">
@@ -666,9 +744,9 @@
                     </div>
                     <div class="mt-[45px]">
                         <div>
-                            <h6 class="text-[#8796E9] text-base 2xl:text-lg font-600 animateBottom" style="font-family: 'Gilroy';">Biz qanday muammolarni yechamiz</h6>
+                            <h6 class="text-[#8796E9] text-lg font-600 animateBottom" style="font-family: 'Gilroy';">Biz qanday muammolarni yechamiz</h6>
                         </div>
-                        <p class="2xl:text-lg text-opacity-[0.82] mt-[6px] animateBottom">
+                        <p class="text-lg text-opacity-[0.82] mt-[6px] animateBottom">
                             Ishlab chiqaruvchiga kerak bo’ladiga plomer homashiyolarni kerakli joyga o’z vaqtida sifati buzilamagan holda yetqazib berish bizning eng asosiy yechadigan.
                         </p>
                     </div>
@@ -677,58 +755,58 @@
             <li class="uk-width-1-6@l uk-width-1-5@m uk-width-1-3@s">
                 <ul class="flex flex-col space-y-[12px]">
                     <li>
-                        <h5 class="2xl:text-lg font-500 text-[#111] text-opacity-[0.42] animateBottom" style="font-family: 'Gilroy';">Web sayt</h5>
+                        <h5 class="text-lg font-500 text-[#111] text-opacity-[0.42] animateBottom" style="font-family: 'Gilroy';">Web sayt</h5>
                     </li>
                     <li class="text-[#111] animateBottom">
-                        <a class="text-[#111] font-500 hover-link-none sm:text-lg md:text-xl 2xl:text-[22px] line-animation" href="index.html">Bosh sahifa</a>
+                        <a class="text-[#111] font-500 hover-link-none text-lg md:text-xl 2xl:text-[22px] line-animation" href="index.html">Bosh sahifa</a>
                     </li>
                     <li class="text-[#111] animateBottom">
-                        <a class="text-[#111] font-500 hover-link-none sm:text-lg md:text-xl 2xl:text-[22px] line-animation" href="about.html">Biz haqimizda</a>
+                        <a class="text-[#111] font-500 hover-link-none text-lg md:text-xl 2xl:text-[22px] line-animation" href="about.html">Biz haqimizda</a>
                     </li>
                     <li class="text-[#111] animateBottom">
-                        <a class="text-[#111] font-500 hover-link-none sm:text-lg md:text-xl 2xl:text-[22px] line-animation" href="services.html">Xizmatlar</a>
+                        <a class="text-[#111] font-500 hover-link-none text-lg md:text-xl 2xl:text-[22px] line-animation" href="services.html">Xizmatlar</a>
                     </li>
                     <li class="text-[#111] animateBottom">
-                        <a class="text-[#111] font-500 hover-link-none sm:text-lg md:text-xl 2xl:text-[22px] line-animation" href="office.html">Xalqaro savdo</a>
+                        <a class="text-[#111] font-500 hover-link-none text-lg md:text-xl 2xl:text-[22px] line-animation" href="office.html">Xalqaro savdo</a>
                     </li>
                     <li class="text-[#111] animateBottom">
-                        <a class="text-[#111] font-500 hover-link-none sm:text-lg md:text-xl 2xl:text-[22px] line-animation" href="news.html">Yangiliklar</a>
+                        <a class="text-[#111] font-500 hover-link-none text-lg md:text-xl 2xl:text-[22px] line-animation" href="news.html">Yangiliklar</a>
                     </li>
                     <li class="text-[#111] animateBottom">
-                        <a class="text-[#111] font-500 hover-link-none sm:text-lg md:text-xl 2xl:text-[22px] line-animation" href="contact.html">Kontaktlar</a>
+                        <a class="text-[#111] font-500 hover-link-none text-lg md:text-xl 2xl:text-[22px] line-animation" href="contact.html">Kontaktlar</a>
                     </li>
                 </ul>
             </li>
             <li class="uk-width-1-6@m uk-width-1-4@s">
                 <ul class="flex flex-col space-y-[12px]">
                     <li>
-                        <h5 class="2xl:text-lg font-500 text-[#111] text-opacity-[0.42] animateBottom" style="font-family: 'Gilroy';">Social media</h5>
+                        <h5 class="text-lg font-500 text-[#111] text-opacity-[0.42] animateBottom" style="font-family: 'Gilroy';">Social media</h5>
                     </li>
                     <li class="text-[#111] animateBottom">
-                        <a class="text-[#111] font-500 hover-link-none sm:text-lg md:text-xl 2xl:text-[22px] line-animation" href="#">Telegram</a>
+                        <a class="text-[#111] font-500 hover-link-none text-lg md:text-xl 2xl:text-[22px] line-animation" href="#">Telegram</a>
                     </li>
                     <li class="text-[#111] animateBottom">
-                        <a class="text-[#111] font-500 hover-link-none sm:text-lg md:text-xl 2xl:text-[22px] line-animation" href="#">Facebook</a>
+                        <a class="text-[#111] font-500 hover-link-none text-lg md:text-xl 2xl:text-[22px] line-animation" href="#">Facebook</a>
                     </li>
                     <li class="text-[#111] animateBottom">
-                        <a class="text-[#111] font-500 hover-link-none sm:text-lg md:text-xl 2xl:text-[22px] line-animation" href="#">LinkedIn</a>
+                        <a class="text-[#111] font-500 hover-link-none text-lg md:text-xl 2xl:text-[22px] line-animation" href="#">LinkedIn</a>
                     </li>
                 </ul>
             </li>
             <li class="uk-width-1-4@l uk-width-1-2@s">
                 <ul class="flex flex-col space-y-[20px]">
                     <li>
-                        <h5 class="2xl:text-lg font-500 text-[#111] text-opacity-[0.42] animateBottom" style="font-family: 'Gilroy';">Kontaktlar</h5>
+                        <h5 class="text-lg font-500 text-[#111] text-opacity-[0.42] animateBottom" style="font-family: 'Gilroy';">Kontaktlar</h5>
                     </li>
                     <li class="text-[#111111bb] animateBottom">
-                        <a class="text-[#111] font-500 duration-200 hover-link-none sm:text-lg md:text-xl 2xl:text-[22px]" href="#">Bu erga kompaniyaning manzili
+                        <a class="text-[#111] font-500 duration-200 hover-link-none text-lg md:text-xl 2xl:text-[22px]" href="#">Bu erga kompaniyaning manzili
                             yoziladi</a>
                         </li>
                         <li class="text-[#111111bb] animateBottom">
-                            <a class="text-[#111] font-500 duration-200 hover-link-none sm:text-lg md:text-xl 2xl:text-[22px]" href="tel:+998974044004">+998 97 404 40 04</a>
+                            <a class="text-[#111] font-500 duration-200 hover-link-none text-lg md:text-xl 2xl:text-[22px]" href="tel:+998974044004">+998 97 404 40 04</a>
                         </li>
                         <li class="text-[#111111bb] animateBottom">
-                            <a class="text-[#111] font-500 duration-200 hover-link-none sm:text-lg md:text-xl 2xl:text-[22px]" href="mailto:chemion@gmail.com">chemion@gmail.com</a>
+                            <a class="text-[#111] font-500 duration-200 hover-link-none text-lg md:text-xl 2xl:text-[22px]" href="mailto:chemion@gmail.com">chemion@gmail.com</a>
                         </li>
                     </ul>
                 </li>
@@ -738,7 +816,7 @@
             <div class="uk-container uk-container-large">
                 <ul class="uk-flex-middle uk-flex-between@s uk-text-center uk-text-left@s uk-padding uk-padding-remove-horizontal uk-child-width-1-1 uk-child-width-auto@s" uk-grid>
                     <li>
-                        <p class="text-sm sm:text-base 2xl:text-lg text-[#111] text-opacity-[0.72] animFade">
+                        <p class="text-base 2xl:text-lg text-[#111] text-opacity-[0.72] animFade">
                             © Chemion Barcha huqular himoyalangan
                         </p>
                     </li>

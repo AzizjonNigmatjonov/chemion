@@ -10,7 +10,7 @@
         font-family: 'Gilroy'; font-weight: 600; color: #111;
     }
     .heading-second {
-        @apply text-[28px] sm:text-[36px] 2xl:text-[42px]
+        @apply text-[32px] sm:text-[36px] 2xl:text-[42px]
     }
     .heading-second {
         font-family: 'Gilroy'; font-weight: 600;
