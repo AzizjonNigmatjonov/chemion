@@ -10,3 +10,23 @@ window.onload = function() {
     const el = document.getElementById('overlay');
     el.style.display = 'none';
 };
+
+const newsBigImgs = document.querySelectorAll('.news-big-images-wrapper li')
+const newsSmallImgs = document.querySelectorAll('.news-small-images-href')
+newsSmallImgs.forEach(function(btn) {
+    btn.addEventListener('click', event => {
+      newsBigImgs.forEach(function(list) {
+          if (list.id == event.target.dataset.target) {
+              list.classList.add('active');
+          } else {
+            list.classList.remove('active');
+          }
+      })
+    })
+});
+const mainNewsBtns = document.querySelectorAll('.main-news-btn');
+mainNewsBtns.forEach(function(btn) {
+    btn.addEventListener('click', event => {
+        console.log(event);
+    })
+});

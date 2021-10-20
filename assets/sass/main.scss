@@ -5,6 +5,7 @@
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   font-family: 'Gilroy';
+  scroll-behavior: smooth;
 }
 .uk-section {
   max-width: 1920px;
@@ -132,7 +133,12 @@
     transform: rotate(180deg);
   }
 }
-
+.news-big-images-wrapper li {
+  display: none;
+}
+.news-big-images-wrapper li.active {
+  display: block;
+}
 // Responsive design start
 @media (max-width: 1820px) {
   .main-main-img-wrapper img {
