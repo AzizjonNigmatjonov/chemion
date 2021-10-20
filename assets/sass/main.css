@@ -8,6 +8,10 @@
   scroll-behavior: smooth;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 .uk-section {
   max-width: 1920px;
   margin-left: auto;
