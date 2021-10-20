@@ -14,7 +14,7 @@
 </head>
 <body>
     
-    <div id="overlay" class="uk-position-fixed uk-width-1-1 uk-height-1-1 uk-position-top-left uk-flex uk-flex-center uk-flex-middle" style="background: rgba(255, 255, 255, 0.62); backdrop-filter: blur(24px); z-index: 999;">
+    <div id="overlay" class="uk-position-fixed uk-width-1-1 uk-height-1-1 uk-position-top-left uk-flex uk-flex-center uk-flex-middle" style="background: rgba(255, 255, 255, 0.72); backdrop-filter: blur(64px); z-index: 999;">
         <div>
             <img class="anim-circle w-[233px]" src="../assets/img/svg/logo.svg" alt="logo">
         </div>
@@ -292,8 +292,11 @@
                                         <div class="w-[10px] h-[10px] bg-[#CD1527] rounded-full"></div>
                                     </div>
                                 </li>
-                                <div class="absolute right-[9px] top-[10px]" style="z-index: -1;">
+                                <div class="absolute right-[9px] top-[10px] hidden sm:block" style="z-index: -1;">
                                     <img class="h-[410px] sm:h-auto" src="../assets/img/svg/about-degree-line-img.svg" alt="line">
+                                </div>
+                                <div class="absolute right-[9px] top-[10px] sm:hidden" style="z-index: -1;">
+                                    <img class="h-[410px] sm:h-auto" src="../assets/img/svg/about-degree-line-img-2.svg" alt="line">
                                 </div>
                             </ul>
                         </div>
