@@ -13,6 +13,14 @@ window.onload = function() {
 
 const newsBigImgs = document.querySelectorAll('.news-big-images-wrapper li')
 const newsSmallImgs = document.querySelectorAll('.news-small-images-href')
+const urlItem = window.location.hash.substr(1);
+newsBigImgs.forEach(function(list) {
+    if (list.id == urlItem) {
+        list.classList.add('active')
+    } else {
+        list.classList.remove('active')
+    }
+})
 newsSmallImgs.forEach(function(btn) {
     btn.addEventListener('click', event => {
       newsBigImgs.forEach(function(list) {
@@ -22,11 +30,5 @@ newsSmallImgs.forEach(function(btn) {
             list.classList.remove('active');
           }
       })
-    })
-});
-const mainNewsBtns = document.querySelectorAll('.main-news-btn');
-mainNewsBtns.forEach(function(btn) {
-    btn.addEventListener('click', event => {
-        console.log(event);
     })
 });
